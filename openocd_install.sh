@@ -1,7 +1,7 @@
 #! /bin/bash
 #####################################################################
 #
-# to install:
+# to install or update:
 # curl --silent https://raw.githubusercontent.com/DexterInd/openocd/master/openocd_install.sh | bash
 #
 #####################################################################
@@ -42,7 +42,7 @@ fi
 
 
 # unzip the compiled OpenOCD
-sudo unzip openocd_compiled.zip
+sudo unzip -qq openocd_compiled.zip
 
 # Put the configuration files into /usr/local/share
 sudo cp -rn openocd_compiled/files/openocd /usr/local/share
